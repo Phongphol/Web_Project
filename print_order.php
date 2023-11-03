@@ -11,9 +11,10 @@ $total_price = $rs['total_price'];
 <html lang="en">
 
 <head>
+    <link rel="shortcut icon" href="img/icon/icon.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>รายการสั่งซื้อ</title>
+    <title>iHAVECOM - CHECK BILL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -85,13 +86,17 @@ $total_price = $rs['total_price'];
                         </h6>
                     </div>
                 </div>
-                <div>
+                <div class="text-center h5">
                     ***กรุณาโอนเงินภายใน 24 ชั่วโมงหลังจากทำการสั่งซื้อ***
                 </div>
+                <div class="text-center h6">
+                    บัญชีพร้อมเพย์ : 095-574-0336 ชื่อ นายพงศ์พล พงศ์ศรี รหัสนิสิต 6330300569<br>
+                    บัญชีพร้อมเพย์ : 063-231-6007 ชื่อ นายรัชชานนท์ หอมประเสริฐ รหัสนิสิต 6330300712
+                </div>
                 <br>
-                <div class = "text-center">
-                    <a href="show_product.php" class="btn btn-danger">Back</a>
-                    <button onclick="window.print()" class="btn btn-info">Print</button>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <a href="show_product.php" class="btn btn-danger btn-lg">Back</a>
+                    <button onclick="window.print()" class="btn btn-info btn-lg">Print</button>
                 </div>
             </div>
         </div>
